@@ -1,0 +1,2251 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 54952
+License: Customer
+
+Current time: 	Wed Feb 06 09:26:56 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 3 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Ross Wenzel
+User home directory: C:/Users/Ross Wenzel
+User working directory: D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2018.3
+RDI_DATADIR: D:/Vivado/2018.3/data
+RDI_BINDIR: D:/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Ross Wenzel/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Ross Wenzel/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Ross Wenzel/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/vivado.log
+Vivado journal file location: 	D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/vivado.jou
+Engine tmp dir: 	D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/.Xil/Vivado-54952-DESKTOP-IRNLGB8
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2018.3
+XILINX_SDK: D:/SDK/2018.3
+XILINX_VIVADO: D:/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 609 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\ENES246-master\ENES246-master\-2VoltageControlledBuffer\project_1\project_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 94 MB (+95874kb) [00:00:11]
+// [Engine Memory]: 639 MB (+518126kb) [00:00:11]
+// [GUI Memory]: 106 MB (+7639kb) [00:00:11]
+// [Engine Memory]: 675 MB (+5057kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3389 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 52 MB. Current time: 2/6/19, 9:27:00 AM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 740.281 ; gain = 106.461 
+// [Engine Memory]: 711 MB (+1511kb) [00:00:14]
+// Project name: project_1; location: D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (vcb.v) elapsed time: 0.2s
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vcb (vcb.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vcb (vcb.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 747 MB. GUI used memory: 52 MB. Current time: 2/6/19, 9:28:38 AM EST
+selectCodeEditor("vcb.v", 194, 131); // cl (w, cp)
+selectCodeEditor("vcb.v", 276, 171); // cl (w, cp)
+selectCodeEditor("vcb.v", 276, 171); // cl (w, cp)
+selectCodeEditor("vcb.v", 216, 167); // cl (w, cp)
+selectCodeEditor("vcb.v", 187, 179); // cl (w, cp)
+// [Engine Memory]: 747 MB (+798kb) [00:02:05]
+selectCodeEditor("vcb.v", 342, 183); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): Elaborate Design: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: vcb 
+// HMemoryUtils.trashcanNow. Engine heap size: 782 MB. GUI used memory: 54 MB. Current time: 2/6/19, 9:29:28 AM EST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,085 MB. GUI used memory: 53 MB. Current time: 2/6/19, 9:29:37 AM EST
+// [Engine Memory]: 1,091 MB (+321426kb) [00:02:51]
+// [Engine Memory]: 1,151 MB (+6316kb) [00:02:51]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: D:/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 128 MB (+17527kb) [00:02:52]
+// [Engine Memory]: 1,211 MB (+2177kb) [00:02:53]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2133 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 823.797 ; gain = 48.934 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'vcb' [D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.srcs/sources_1/imports/project_1/vcb.v:3] INFO: [Synth 8-6155] done synthesizing module 'vcb' (1#1) [D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.srcs/sources_1/imports/project_1/vcb.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 863.031 ; gain = 88.168 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 863.031 ; gain = 88.168 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 863.031 ; gain = 88.168 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc] Finished Parsing XDC File [D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1123.102 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1233.160 ; gain = 458.297 
+// Tcl Message: 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1233.160 ; gain = 458.297 
+// [GUI Memory]: 136 MB (+2259kb) [00:02:54]
+// 'dQ' command handler elapsed time: 20 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Elapsed time: 444 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Feb  6 09:37:31 2019] Launched synth_1... Run output will be captured here: D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectCodeEditor("vcb.v", 158, 219); // cl (w, cp)
+typeControlKey((HResource) null, "vcb.v", 'c'); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Feb  6 09:38:32 2019] Launched impl_1... Run output will be captured here: D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_CANCEL, "Cancel"); // a (g)
+// 'dQ' command handler elapsed time: 4 seconds
+dismissDialog("Close Design"); // g (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,216 MB. GUI used memory: 76 MB. Current time: 2/6/19, 9:38:44 AM EST
+// Engine heap size: 1,216 MB. GUI used memory: 76 MB. Current time: 2/6/19, 9:38:44 AM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Open Synthesized Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,216 MB. GUI used memory: 58 MB. Current time: 2/6/19, 9:38:46 AM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1406 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc] Finished Parsing XDC File [D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1233.160 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// 'dQ' command handler elapsed time: 6 seconds
+// Device view-level: 0.0
+dismissDialog("Open Synthesized Design"); // bx (cp)
+// Device view-level: 0.0
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// RouteApi::initDelayMediator elapsed time: 12.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 1,630 MB. GUI used memory: 88 MB. Current time: 2/6/19, 9:39:03 AM EST
+// [Engine Memory]: 1,654 MB (+400411kb) [00:12:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,654 MB. GUI used memory: 87 MB. Current time: 2/6/19, 9:39:23 AM EST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 100 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Feb  6 09:40:36 2019] Launched impl_1... Run output will be captured here: D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/runme.log 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 34, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,668 MB. GUI used memory: 62 MB. Current time: 2/6/19, 9:40:43 AM EST
+// Engine heap size: 1,668 MB. GUI used memory: 63 MB. Current time: 2/6/19, 9:40:43 AM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,683 MB. GUI used memory: 61 MB. Current time: 2/6/19, 9:40:45 AM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1289 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1726.918 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1726.918 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1726.918 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 1,753 MB (+17692kb) [00:14:01]
+// 'dQ' command handler elapsed time: 7 seconds
+// Device view-level: 0.0
+// Device view-level: 0.0
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, cp): FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// [GUI Memory]: 163 MB (+20948kb) [00:14:03]
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 1,796 MB. GUI used memory: 100 MB. Current time: 2/6/19, 9:40:50 AM EST
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, cp): TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 1.1
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 104537, 2470008); // D (I, cp)
+// Device view-level: 1.6
+// HMemoryUtils.trashcanNow. Engine heap size: 1,796 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:40:54 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,796 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:40:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,808 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:40:57 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:40:58 AM EST
+// [Engine Memory]: 1,842 MB (+1601kb) [00:14:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:40:58 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,843 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:40:59 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,843 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:41:00 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,843 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:41:00 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,845 MB. GUI used memory: 104 MB. Current time: 2/6/19, 9:41:01 AM EST
+// Elapsed time: 11 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 207959, 2489692); // D (I, cp)
+// Device view-level: 2.8
+// HMemoryUtils.trashcanNow. Engine heap size: 1,850 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:41:07 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 195777, 2503147); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 250548, 2336166); // D (I, cp)
+// Device view-level: 1.0
+// HMemoryUtils.trashcanNow. Engine heap size: 1,862 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:41:28 AM EST
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,862 MB. GUI used memory: 101 MB. Current time: 2/6/19, 9:41:31 AM EST
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 22 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1124 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Elapsed time: 42 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4023DA 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292A4023DA. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.  
+// a (cp): Critical Messages: addNotify
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 42, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1510 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Noise]", 42, false); // u (Q, cp)
+// [Engine Memory]: 1,936 MB (+1368kb) [00:15:48]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4105 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,826 MB. GUI used memory: 153 MB. Current time: 2/6/19, 9:42:41 AM EST
+// [Engine Memory]: 2,826 MB (+832307kb) [00:15:55]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 314134, 2670139); // D (I, cp)
+// Device view-level: 2.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:42:48 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 106 MB. Current time: 2/6/19, 9:42:49 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 106 MB. Current time: 2/6/19, 9:42:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 106 MB. Current time: 2/6/19, 9:42:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 106 MB. Current time: 2/6/19, 9:42:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 106 MB. Current time: 2/6/19, 9:42:51 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 106 MB. Current time: 2/6/19, 9:42:52 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 351755, 2844671); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 315060, 2258366); // D (I, cp)
+// Device view-level: 1.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:01 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 491432, 2669539); // D (I, cp)
+// Device view-level: 2.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:09 AM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:16 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:17 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:18 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:19 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:19 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:20 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:28 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:29 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:30 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:33 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:37 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:39 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:39 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:43 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:43:44 AM EST
+// Elapsed time: 32 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 492274, 2694554); // D (I, cp)
+// Device view-level: 3.2
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 494492, 2699496); // D (I, cp)
+// Device view-level: 3.8
+// Elapsed time: 10 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495769, 2702385); // D (I, cp)
+// Device view-level: 4.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 109 MB. Current time: 2/6/19, 9:44:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 108 MB. Current time: 2/6/19, 9:44:11 AM EST
+// Elapsed time: 14 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 497670, 2703922); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 84366, 2270507); // D (I, cp)
+// Device view-level: 1.1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 311003, 2452914); // D (I, cp)
+// Device view-level: 2.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 243316, 2494725); // D (I, cp)
+// Device view-level: 3.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 109 MB. Current time: 2/6/19, 9:44:24 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 243968, 2496969); // D (I, cp)
+// Device view-level: 4.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 108 MB. Current time: 2/6/19, 9:44:35 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:35 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:35 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:36 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:36 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:37 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 108 MB. Current time: 2/6/19, 9:44:38 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 108 MB. Current time: 2/6/19, 9:44:39 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 108 MB. Current time: 2/6/19, 9:44:39 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 108 MB. Current time: 2/6/19, 9:44:39 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:40 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:41 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:42 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:43 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:44 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:45 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:47 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:48 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:48 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:49 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:49 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:51 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:51 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:51 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:52 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 107 MB. Current time: 2/6/19, 9:44:53 AM EST
+// Elapsed time: 28 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 208362, 2492702); // D (I, cp)
+// Device select: 'Site - H17'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 27921, 334028, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 208362, 2492702, false, false, false, false, true); // D (I, cp) - Double Click
+// Device select: 'Site - H17'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 27921, 334028, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 112 MB. Current time: 2/6/19, 9:44:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:44:57 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:44:58 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:44:58 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:00 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:00 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:03 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:04 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:04 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:04 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:06 AM EST
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:13 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:13 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:14 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 111 MB. Current time: 2/6/19, 9:45:15 AM EST
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// [GUI Memory]: 172 MB (+344kb) [00:18:36]
+// Device view-level: 2.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 112 MB. Current time: 2/6/19, 9:45:25 AM EST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 49, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 49, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aN (cp): Open New Hardware Target: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, aN)
+dismissDialog("Open New Hardware Target"); // aN (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 42, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1248 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:45:59 AM EST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 206813, 2487447); // D (I, cp)
+// Device view-level: 3.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:46:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:22 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:22 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:28 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:29 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:29 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:30 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:32 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:32 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 132 MB. Current time: 2/6/19, 9:47:32 AM EST
+// Elapsed time: 92 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 244231, 2496805); // D (I, cp)
+// Device view-level: 4.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:38 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 244413, 2497454); // D (I, cp)
+// Device view-level: 4.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:47:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:57 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:58 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:58 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:47:59 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:01 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:02 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:03 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:03 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:04 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:04 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 131 MB. Current time: 2/6/19, 9:48:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:06 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:06 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:07 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:08 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:08 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:09 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:11 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 115 MB. Current time: 2/6/19, 9:48:13 AM EST
+// Elapsed time: 35 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 343770, 2484721); // D (I, cp)
+// Device view-level: 4.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:20 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:21 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:22 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:22 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:23 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:23 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,897 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:24 AM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:28 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:28 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:29 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:29 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:30 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:30 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:31 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 517163, 2485491); // D (I, cp)
+// Device view-level: 4.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:35 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:35 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:36 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:36 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:37 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:37 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:38 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:38 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:38 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:39 AM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:43 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:44 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:44 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:46 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 116 MB. Current time: 2/6/19, 9:48:46 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 517056, 2531528); // D (I, cp)
+// Device select: 'Node - LH0'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 21567, 105593, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 517056, 2531480, false, false, false, false, true); // D (I, cp) - Double Click
+// Device select: 'Node - LH0'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 21567, 105591, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:47 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:49 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:49 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:51 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:51 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:52 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 9:48:52 AM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 118 MB. Current time: 2/6/19, 9:48:57 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 118 MB. Current time: 2/6/19, 9:48:57 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 118 MB. Current time: 2/6/19, 9:49:01 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 118 MB. Current time: 2/6/19, 9:49:01 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 491550, 2697092); // D (I, cp)
+// Device view-level: 3.5
+// Elapsed time: 11 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495662, 2702802); // D (I, cp)
+// Device view-level: 4.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:19 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 496156, 2703261); // D (I, cp)
+// Device view-level: 4.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// [GUI Memory]: 183 MB (+2958kb) [00:22:39]
+// Device view-level: 3.7
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 118 MB. Current time: 2/6/19, 9:49:27 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495616, 2702203); // D (I, cp)
+// Device view-level: 4.2
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495905, 2702644); // D (I, cp)
+// Device view-level: 4.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 120 MB. Current time: 2/6/19, 9:49:47 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:48 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:48 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:49 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:50 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:53 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:49:57 AM EST
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vcb (vcb.v)]", 1, false); // B (D, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 119 MB. Current time: 2/6/19, 9:50:34 AM EST
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+// Elapsed time: 174 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 50, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/ENES246-master/ENES246-master/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 321 seconds
+selectCodeEditor("vcb.v", 151, 152); // cl (w, cp)
+selectCodeEditor("vcb.v", 151, 152); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("vcb.v", 46, 158); // cl (w, cp)
+selectCodeEditor("vcb.v", 251, 154); // cl (w, cp)
+selectCodeEditor("vcb.v", 70, 159); // cl (w, cp)
+// Elapsed time: 71 seconds
+selectCodeEditor("vcb.v", 1059, 178); // cl (w, cp)
+selectCodeEditor("vcb.v", 354, 128); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("vcb.v", 170, 114); // cl (w, cp)
+selectCodeEditor("vcb.v", 101, 184); // cl (w, cp)
+selectCodeEditor("vcb.v", 86, 139); // cl (w, cp)
+selectCodeEditor("vcb.v", 59, 136); // cl (w, cp)
+selectCodeEditor("vcb.v", 59, 136); // cl (w, cp)
+selectCodeEditor("vcb.v", 97, 140); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("vcb.v", 183, 116); // cl (w, cp)
+selectCodeEditor("vcb.v", 78, 138); // cl (w, cp)
+selectCodeEditor("vcb.v", 281, 155); // cl (w, cp)
+selectCodeEditor("vcb.v", 7, 168); // cl (w, cp)
+selectCodeEditor("vcb.v", 316, 164); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectCodeEditor("vcb.v", 190, 157); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("vcb.v", 1098, 274); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("vcb.v", 359, 134); // cl (w, cp)
+selectCodeEditor("vcb.v", 321, 208); // cl (w, cp)
+// Elapsed time: 77 seconds
+selectCodeEditor("vcb.v", 196, 244); // cl (w, cp)
+selectCodeEditor("vcb.v", 242, 245); // cl (w, cp)
+selectCodeEditor("vcb.v", 242, 245, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vcb.v", 242, 245); // cl (w, cp)
+selectCodeEditor("vcb.v", 192, 280); // cl (w, cp)
+selectCodeEditor("vcb.v", 157, 282); // cl (w, cp)
+selectCodeEditor("vcb.v", 163, 287); // cl (w, cp)
+selectCodeEditor("vcb.v", 224, 291); // cl (w, cp)
+selectCodeEditor("vcb.v", 282, 287); // cl (w, cp)
+typeControlKey((HResource) null, "vcb.v", 'c'); // cl (w, cp)
+selectCodeEditor("vcb.v", 287, 292); // cl (w, cp)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "vcb.v", 'v'); // cl (w, cp)
+selectCodeEditor("vcb.v", 191, 325); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("vcb.v", 315, 326); // cl (w, cp)
+typeControlKey((HResource) null, "vcb.v", 'v'); // cl (w, cp)
+selectCodeEditor("vcb.v", 231, 347); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("vcb.v", 258, 324); // cl (w, cp)
+selectCodeEditor("vcb.v", 63, 343); // cl (w, cp)
+selectCodeEditor("vcb.v", 286, 345); // cl (w, cp)
+selectCodeEditor("vcb.v", 166, 316); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("vcb.v", 298, 342); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("vcb.v", 267, 200); // cl (w, cp)
+typeControlKey((HResource) null, "vcb.v", 'c'); // cl (w, cp)
+selectCodeEditor("vcb.v", 97, 370); // cl (w, cp)
+typeControlKey((HResource) null, "vcb.v", 'v'); // cl (w, cp)
+selectCodeEditor("vcb.v", 25, 369); // cl (w, cp)
+selectCodeEditor("vcb.v", 68, 348); // cl (w, cp)
+selectCodeEditor("vcb.v", 34, 370); // cl (w, cp)
+selectCodeEditor("vcb.v", 26, 116); // cl (w, cp)
+selectCodeEditor("vcb.v", 299, 262); // cl (w, cp)
+typeControlKey((HResource) null, "vcb.v", 'v'); // cl (w, cp)
+selectCodeEditor("vcb.v", 108, 119); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("vcb.v", 156, 119); // cl (w, cp)
+selectCodeEditor("vcb.v", 153, 156); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("vcb.v", 345, 349); // cl (w, cp)
+selectCodeEditor("vcb.v", 193, 282); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("vcb.v", 246, 287); // cl (w, cp)
+// Elapsed time: 108 seconds
+selectCodeEditor("vcb.v", 169, 223); // cl (w, cp)
+selectCodeEditor("vcb.v", 169, 241); // cl (w, cp)
+selectCodeEditor("vcb.v", 386, 240); // cl (w, cp)
+selectCodeEditor("vcb.v", 376, 254); // cl (w, cp)
+// Elapsed time: 102 seconds
+selectCodeEditor("vcb.v", 376, 254); // cl (w, cp)
+selectCodeEditor("vcb.v", 367, 283); // cl (w, cp)
+selectCodeEditor("vcb.v", 343, 304); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cp): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, f)
+// Elapsed time: 16 seconds
+setFolderChooser("D:/GitHub/ENES-246/BufferVoltageControll");
+// Elapsed time: 10 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "MyOwnTristate", true); // Y (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// F (f): Create Source File: addNotify
+dismissDialog("Create Source File"); // F (f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// F (f): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Tri"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// C (f): Create Constraints File: addNotify
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, (String) null); // Y (D, C)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Create Constraints File"); // C (f)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+// Elapsed time: 24 seconds
+setFileChooser("D:/ENES246-master/ENES246-master/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 12 seconds
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i (T, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, "PAResourceOtoP.PartChooser_TABBED_PANE", (HResource) null, "Boards", 1, false, true); // i (T, f) - Double Click
+// Elapsed time: 32 seconds
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Artix-7 AC701 Evaluation Platform ; Artix-7 AC701 Evaluation Platform ; xilinx.com ; 1.4 ; xc7a200tfbg676-2 ; 676 ; 1.1 ; 400 ; 134600 ; 269200 ; 365 ; 0 ; 740 ; 8 ; 8 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 10 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 1, "xc7a200tfbg676-2", 4); // e (Q, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Artix-7 AC701 Evaluation Platform ; Artix-7 AC701 Evaluation Platform ; xilinx.com ; 1.4 ; xc7a200tfbg676-2 ; 676 ; 1.1 ; 400 ; 134600 ; 269200 ; 365 ; 0 ; 740 ; 8 ; 8 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 10 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 1, "Artix-7 AC701 Evaluation Platform", 0); // e (Q, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Artix-7 AC701 Evaluation Platform ; Artix-7 AC701 Evaluation Platform ; xilinx.com ; 1.4 ; xc7a200tfbg676-2 ; 676 ; 1.1 ; 400 ; 134600 ; 269200 ; 365 ; 0 ; 740 ; 8 ; 8 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 10 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 1, "Artix-7 AC701 Evaluation Platform", 0); // e (Q, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Parts", 0); // i (T, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7k70tfbv484-2L ; 484 ; 285 ; 41000 ; 82000 ; 135 ; 0 ; 240 ; 4 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ; 0 ; 100 ; 100 ; E ; 0.97 ; 0.97 ; 1.03", 355, "xc7k70tfbv484-2L", 0); // x (Q, f)
+selectTableHeader(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "Part", 0); // x (Q, f)
+selectTableHeader(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "Part", 0, false, false, false, false, true); // x (Q, f) - Double Click
+selectTableHeader(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "Part", 0); // x (Q, f)
+selectTableHeader(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "Part", 0); // x (Q, f)
+// Elapsed time: 20 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "XC7A100TCSG324"); // OverlayTextField (I, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0); // x (Q, f)
+// Elapsed time: 12 seconds
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// al (cp): Save Project: addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (C, J)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 104 MB. Current time: 2/6/19, 10:16:41 AM EST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 10:16:41 AM EST
+// TclEventType: DESIGN_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// bx (f):  Create Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6689 ms.
+dismissDialog("Save Project"); // al (cp)
+// Tcl Message: close_project 
+// Tcl Message: close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project MyOwnTristate D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate -part xc7a100tcsg324-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1553 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Command: 'file mkdir D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new'
+// Tcl Message: file mkdir D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new 
+// Tcl Message: close [ open D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new/Tri.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new/Tri.v 
+// I (cp): Define Module: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 -force -norecurse D:/ENES246-master/ENES246-master/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc 
+// Elapsed time: 11 seconds
+dismissDialog("New Project"); // f (cp)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (Q, I)
+// Elapsed time: 52 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 262 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Tri (Tri.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Tri (Tri.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Tri (Tri.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Tri.v", 158, 306); // cl (w, cp)
+selectCodeEditor("Tri.v", 158, 306); // cl (w, cp)
+// Elapsed time: 85 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7a100tcsg324-1 ; Default settings for Implementation.", 1, (String) null, 9, false); // ax (Q, cp)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.5s
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 11 seconds
+setFileChooser("D:/ENES246-master/ENES246-master/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse D:/ENES246-master/ENES246-master/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Lab1-1Buffers.v", 220, 263); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 1); // k (j, cp)
+selectCodeEditor("Tri.v", 117, 305); // cl (w, cp)
+typeControlKey((HResource) null, "Tri.v", 'v'); // cl (w, cp)
+selectCodeEditor("Tri.v", 173, 351); // cl (w, cp)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, buffers.xdc]", 5, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Lab1-1Buffers.v", 2); // k (j, cp)
+selectCodeEditor("Lab1-1Buffers.v", 230, 288); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 1); // k (j, cp)
+// Elapsed time: 367 seconds
+selectCodeEditor("Tri.v", 168, 193); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("Tri.v", 145, 322); // cl (w, cp)
+// Elapsed time: 80 seconds
+selectCodeEditor("Tri.v", 397, 325); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("Tri.v", 112, 345); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("Tri.v", 89, 349); // cl (w, cp)
+selectCodeEditor("Tri.v", 36, 346); // cl (w, cp)
+selectCodeEditor("Tri.v", 133, 348); // cl (w, cp)
+selectCodeEditor("Tri.v", 37, 365); // cl (w, cp)
+selectCodeEditor("Tri.v", 228, 377); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("Tri.v", 209, 370); // cl (w, cp)
+selectCodeEditor("Tri.v", 284, 382); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("Tri.v", 239, 371, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("Tri.v", 228, 357); // cl (w, cp)
+selectCodeEditor("Tri.v", 241, 367); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Tri.v", 238, 365); // cl (w, cp)
+selectCodeEditor("Tri.v", 246, 371); // cl (w, cp)
+selectCodeEditor("Tri.v", 173, 363); // cl (w, cp)
+selectCodeEditor("Tri.v", 180, 370); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Tri.v", 359, 390); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("Tri.v", 380, 338); // cl (w, cp)
+selectCodeEditor("Tri.v", 370, 239); // cl (w, cp)
+selectCodeEditor("Tri.v", 353, 343); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("Tri.v", 328, 382); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  3447 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 82 MB. Current time: 2/6/19, 2:09:43 PM EST
+// Elapsed time: 13098 seconds
+selectCodeEditor("Tri.v", 283, 302); // cl (w, cp)
+typeControlKey((HResource) null, "Tri.v", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Tri.v", 296, 308); // cl (w, cp)
+typeControlKey((HResource) null, "Tri.v", 'c'); // cl (w, cp)
+selectCodeEditor("Tri.v", 56, 330); // cl (w, cp)
+typeControlKey((HResource) null, "Tri.v", 'v'); // cl (w, cp)
+selectCodeEditor("Tri.v", 119, 304); // cl (w, cp)
+selectCodeEditor("Tri.v", 72, 320); // cl (w, cp)
+selectCodeEditor("Tri.v", 188, 325); // cl (w, cp)
+selectCodeEditor("Tri.v", 261, 326); // cl (w, cp)
+selectCodeEditor("Tri.v", 294, 329); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Tri.v", 115, 325); // cl (w, cp)
+selectCodeEditor("Tri.v", 301, 329); // cl (w, cp)
+// Elapsed time: 112 seconds
+selectCodeEditor("Tri.v", 204, 223); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("Tri.v", 160, 230); // cl (w, cp)
+selectCodeEditor("Tri.v", 159, 246); // cl (w, cp)
+selectCodeEditor("Tri.v", 145, 226); // cl (w, cp)
+selectCodeEditor("Tri.v", 224, 195); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("Tri.v", 357, 317); // cl (w, cp)
+selectCodeEditor("Tri.v", 296, 221); // cl (w, cp)
+selectCodeEditor("Tri.v", 276, 296); // cl (w, cp)
+selectCodeEditor("Tri.v", 115, 287); // cl (w, cp)
+selectCodeEditor("Tri.v", 295, 222); // cl (w, cp)
+selectCodeEditor("Tri.v", 243, 159); // cl (w, cp)
+selectCodeEditor("Tri.v", 313, 151); // cl (w, cp)
+selectCodeEditor("Tri.v", 280, 137); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Tri.v", 92, 287); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Tri.v", 134, 345); // cl (w, cp)
+selectCodeEditor("Tri.v", 155, 305); // cl (w, cp)
+selectCodeEditor("Tri.v", 130, 32); // cl (w, cp)
+selectCodeEditor("Tri.v", 213, 211); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("Tri.v", 881, 224); // cl (w, cp)
+// Elapsed time: 68 seconds
+selectCodeEditor("Tri.v", 314, 238); // cl (w, cp)
+selectCodeEditor("Tri.v", 413, 243); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Tri.v", 753, 241); // cl (w, cp)
+selectCodeEditor("Tri.v", 805, 243); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): Elaborate Design: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: Tri 
+// TclEventType: ELABORATE_START
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Common 17-344] 'source' was cancelled 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: INFO: [Common 17-344] 'synth_design' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'dQ' command handler elapsed time: 4 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, buffers.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, buffers.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, buffers.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("buffers.xdc", 1094, 176); // cl (w, cp)
+selectCodeEditor("buffers.xdc", 719, 75); // cl (w, cp)
+selectCodeEditor("buffers.xdc", 718, 51); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Lab1-1Buffers.v", 2); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/imports/RTL/Lab1-1Buffers.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/imports/RTL/Lab1-1Buffers.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 2, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: Tri 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 77 MB. Current time: 2/6/19, 2:19:30 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Tri' [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new/Tri.v:25] INFO: [Synth 8-6155] done synthesizing module 'Tri' (1#1) [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new/Tri.v:25] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc] Finished Parsing XDC File [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// 'dQ' command handler elapsed time: 6 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Feb  6 14:19:37 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Feb  6 14:20:55 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 75 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 99 MB. Current time: 2/6/19, 2:22:17 PM EST
+// Engine heap size: 2,926 MB. GUI used memory: 100 MB. Current time: 2/6/19, 2:22:17 PM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:22:18 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1039 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3582.504 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 9 seconds
+// Device view-level: 0.0
+// Device view-level: 0.0
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 35, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Feb  6 14:22:27 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 2:22:32 PM EST
+// Elapsed time: 24 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 116705, 2603851); // D (I, cp)
+// Device view-level: 1.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 2:22:54 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 2:22:55 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 474301, 3515408); // D (I, cp)
+// Device view-level: 2.5
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 493208, 3552723); // D (I, cp)
+// Device view-level: 3.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 2:22:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 2:23:14 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 117 MB. Current time: 2/6/19, 2:23:15 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 115 MB. Current time: 2/6/19, 2:23:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 115 MB. Current time: 2/6/19, 2:23:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 115 MB. Current time: 2/6/19, 2:23:17 PM EST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 21 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4023DA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.runs/impl_1/Tri.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.runs/impl_1/Tri.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Tri.v", 346, 115); // cl (w, cp)
+selectCodeEditor("Tri.v", 301, 127); // cl (w, cp)
+selectCodeEditor("Tri.v", 289, 124); // cl (w, cp)
+selectCodeEditor("Tri.v", 325, 232); // cl (w, cp)
+// Elapsed time: 482 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 31, false); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1378 ms.
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buffers.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 122 MB. Current time: 2/6/19, 2:32:23 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 499554, 3561491); // D (I, cp)
+// Device view-level: 0.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 0.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 120 MB. Current time: 2/6/19, 2:32:28 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1616250, 3513013); // D (I, cp)
+// Device view-level: 1.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1729797, 3724151); // D (I, cp)
+// Device view-level: 2.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 146 MB. Current time: 2/6/19, 2:32:32 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 120 MB. Current time: 2/6/19, 2:32:33 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.4
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.5
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3736501, 4052468); // D (I, cp)
+// Device view-level: 1.8
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 120 MB. Current time: 2/6/19, 2:32:41 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3866453, 4106320); // D (I, cp)
+// Device view-level: 2.5
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3841259, 4135156); // D (I, cp)
+// Device view-level: 3.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3841305, 4136976); // D (I, cp)
+// Device view-level: 5.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.1
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 120 MB. Current time: 2/6/19, 2:33:00 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.7
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.2
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.8
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 121 MB. Current time: 2/6/19, 2:33:01 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.4
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 2539427, 4376501); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 351485, 2513342); // D (I, cp)
+// Device select: 'Tile - CLBLL_L_X4Y104'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 489, 226, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 509328, 2586193); // D (I, cp)
+// Device select: 'Tile - CLBLL_L_X4Y105'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 488, 225, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 124 MB. Current time: 2/6/19, 2:33:07 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 849297, 2683327); // D (I, cp)
+// Device select: 'Tile - INT_L_X8Y107'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 510, 221, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 327201, 2586193); // D (I, cp)
+// Device select: 'Tile - CLBLM_R_X3Y103'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 487, 229, 1217, 514); // U (k, cp)
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, cp): FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -8550, 301228); // D (I, cp)
+// Device view-level: 1.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 164 MB. Current time: 2/6/19, 2:33:10 PM EST
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, cp): TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 2.4
+// Device view-level: 1.3
+// [GUI Memory]: 194 MB (+1653kb) [05:06:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:14 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:15 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 2:33:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:17 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 2:33:18 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 2:33:19 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 448799, 3503452); // D (I, cp)
+// Device view-level: 2.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:22 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 2:33:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 2:33:25 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:25 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:26 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:27 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 490305, 3855913); // D (I, cp)
+// Device view-level: 3.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:33:30 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 494793, 3865024); // D (I, cp)
+// Device view-level: 4.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 128 MB. Current time: 2/6/19, 2:33:35 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.0
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 335695, 3852570); // D (I, cp)
+// Device view-level: 3.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:40 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:44 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 501188, 3541433); // D (I, cp)
+// Device view-level: 3.1
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:48 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 144 MB. Current time: 2/6/19, 2:33:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:51 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 503767, 3552724); // D (I, cp)
+// Device view-level: 3.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 131 MB. Current time: 2/6/19, 2:33:57 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 129 MB. Current time: 2/6/19, 2:33:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 134 MB. Current time: 2/6/19, 2:34:02 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 130 MB. Current time: 2/6/19, 2:34:04 PM EST
+// Elapsed time: 13 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 493984, 3554091); // D (I, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 133 MB. Current time: 2/6/19, 2:34:09 PM EST
+// Device view-level: 3.7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 494874, 3554382); // D (I, cp)
+// Device view-level: 3.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 494510, 3557974); // D (I, cp)
+// Device view-level: 4.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 132 MB. Current time: 2/6/19, 2:34:15 PM EST
+// Elapsed time: 44 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495691, 3558934); // D (I, cp)
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173511, 1245764, 1217, 514); // U (k, cp)
+// PAPropertyPanels.initPanels (s7s8) elapsed time: 0.4s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495691, 3558934); // D (I, cp)
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173511, 1245764, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495691, 3558934, false, false, false, false, true); // D (I, cp) - Double Click
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173511, 1245764, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:35:01 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495323, 3558939); // D (I, cp)
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173382, 1245766, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495331, 3558928); // D (I, cp)
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173385, 1245762, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:35:03 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495331, 3558928, false, false, false, false, true); // D (I, cp) - Double Click
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173385, 1245762, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 495820, 3558937); // D (I, cp)
+// Device select: 'Net - s7s8'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 173556, 1245765, 1217, 514); // U (k, cp)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.1
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:35:07 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.7
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 505932, 3553605); // D (I, cp)
+// Device view-level: 3.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 518606, 3557133); // D (I, cp)
+// Device view-level: 4.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:35:19 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:35:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 134 MB. Current time: 2/6/19, 2:35:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 150 MB. Current time: 2/6/19, 2:35:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 153 MB. Current time: 2/6/19, 2:35:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 134 MB. Current time: 2/6/19, 2:35:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 134 MB. Current time: 2/6/19, 2:35:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 134 MB. Current time: 2/6/19, 2:35:25 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.1
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:35:28 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:35:35 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:35:36 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:35:37 PM EST
+// [GUI Memory]: 204 MB (+140kb) [05:09:18]
+// Elapsed time: 37 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 507286, 3556763); // D (I, cp)
+// Device view-level: 4.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:06 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:08 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.7
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.8
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:36:12 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.4
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:36:16 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 488837, 3542354); // D (I, cp)
+// Device view-level: 3.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:36:18 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:36:22 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:42 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:45 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:48 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:36:52 PM EST
+// Elapsed time: 34 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 503870, 3514444); // D (I, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:53 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:36:54 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:36:56 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:36:57 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:36:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:36:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:36:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:36:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:37:00 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:37:00 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:00 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:01 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:02 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:02 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:04 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:05 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:22 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:22 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:24 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:26 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:27 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:32 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:34 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:43 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 135 MB. Current time: 2/6/19, 2:37:45 PM EST
+// Elapsed time: 62 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 507095, 3481235); // D (I, cp)
+// Device select: 'Tile - CLBLL_L_X2Y75'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 10063, 69083, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 507095, 3481235, false, false, false, false, true); // D (I, cp) - Double Click
+// Device select: 'Tile - CLBLL_L_X2Y75'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 10063, 69083, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:54 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 509413, 3480530); // D (I, cp)
+// Device select: 'Node - LH0'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 10109, 69069, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:37:58 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:38:01 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.1
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.7
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:38:04 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 494642, 2464169); // D (I, cp)
+// Device view-level: 2.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:38:09 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 136 MB. Current time: 2/6/19, 2:38:10 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 199773, 2485416); // D (I, cp)
+// Device view-level: 2.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:38:28 PM EST
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.3
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 351880, 2483796); // D (I, cp)
+// Device view-level: 2.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:34 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.5
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:38 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 334188, 2780788); // D (I, cp)
+// Device view-level: 2.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:44 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:38:45 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:38:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 137 MB. Current time: 2/6/19, 2:38:54 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:56 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 141 MB. Current time: 2/6/19, 2:38:57 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 162 MB. Current time: 2/6/19, 2:38:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:58 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:38:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:39:01 PM EST
+// Elapsed time: 15 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3446316, 2781737); // D (I, cp)
+// Device view-level: 2.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 172 MB. Current time: 2/6/19, 2:39:05 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:05 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:39:06 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 163 MB. Current time: 2/6/19, 2:39:06 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:07 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:39:08 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:39:09 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 138 MB. Current time: 2/6/19, 2:39:09 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.4
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:11 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.6
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3686735, 3904289); // D (I, cp)
+// Device view-level: 1.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3709587, 3937761); // D (I, cp)
+// Device view-level: 2.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:39:18 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3840088, 4099848); // D (I, cp)
+// Device view-level: 2.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:39:25 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.4
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.1
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:31 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 181500, 2950445); // D (I, cp)
+// Device view-level: 0.8
+// Elapsed time: 12 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 451431, 3482468); // D (I, cp)
+// Device view-level: 1.7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:39:46 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:39:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 176 MB. Current time: 2/6/19, 2:39:52 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:39:55 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 433743, 3055601); // D (I, cp)
+// Device view-level: 2.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 493447, 3182701); // D (I, cp)
+// Device view-level: 3.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:40:02 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:40:05 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:06 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:08 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:08 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:09 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:10 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:11 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:12 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:13 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:14 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:19 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:20 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:40:26 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:27 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 139 MB. Current time: 2/6/19, 2:40:28 PM EST
+// Elapsed time: 28 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 501206, 3558605); // D (I, cp)
+// Device select: 'Net - LED2_OBUFT_inst_i_3_n_0'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 15966, 113360, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 501080, 3557789); // D (I, cp)
+// Device select: 'Net - LED2_TRI'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 15962, 113334, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:40:35 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 501865, 3556847); // D (I, cp)
+// Device select: 'Net - LED2_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 15987, 113304, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 184 MB. Current time: 2/6/19, 2:40:39 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.4
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:40:43 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 140 MB. Current time: 2/6/19, 2:40:44 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 197314, 2771454); // D (I, cp)
+// Device select: 'I/O Bank - I/O Bank 15'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 127, 1552, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 200935, 2787746); // D (I, cp)
+// Device select: 'Cell - LED2_OBUFT_inst'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 111, 1540, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 325840, 2789556); // D (I, cp)
+// Device select: 'Net - SW_IBUF[0]'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 180, 1541, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 257052, 2776884); // D (I, cp)
+// Device select: 'Tile - LIOI3_X0Y103'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 142, 1534, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 144 MB. Current time: 2/6/19, 2:40:48 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 184643, 2804038); // D (I, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 195504, 2793176); // D (I, cp)
+// Device select: 'Net - LED2_TRI'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 128, 1555, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 291446, 2833001); // D (I, cp)
+// Device select: 'Net - SW_IBUF[0]'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 162, 1566, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 298687, 2901790); // D (I, cp)
+// Device select: 'Tile - IO_INT_INTERFACE_L_X0Y98'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 165, 1603, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 309548, 2966958); // D (I, cp)
+// Device select: 'Tile - IO_INT_INTERFACE_L_X0Y96'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 171, 1640, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 145 MB. Current time: 2/6/19, 2:40:52 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 309548, 2968768); // D (I, cp)
+// Device select: 'Tile - IO_INT_INTERFACE_L_X0Y96'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 171, 1640, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 309548, 2968768, false, false, false, false, true); // D (I, cp) - Double Click
+// Device select: 'Tile - IO_INT_INTERFACE_L_X0Y96'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 171, 1640, 1217, 514); // U (k, cp)
+// DeviceOracle::getDeviceDataByteArray length(bytes): 100575
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 485140, 2842052); // D (I, cp)
+// Device select: 'Tile - VBRK_X9Y105'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 268, 1570, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 430833, 2816709); // D (I, cp)
+// Device select: 'Tile - CMT_FIFO_R_X7Y112'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 238, 1556, 1217, 514); // U (k, cp)
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "Device_select_area"); // u (f, cp): TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 193694, 2785935); // D (I, cp)
+// bR (cp): Select Area: addNotify
+dismissDialog("Select Area"); // bR (cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 190074, 2784125); // D (I, cp)
+// Device view-level: 2.4
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 147 MB. Current time: 2/6/19, 2:40:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 147 MB. Current time: 2/6/19, 2:41:07 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 146 MB. Current time: 2/6/19, 2:41:08 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 146 MB. Current time: 2/6/19, 2:41:09 PM EST
+// Elapsed time: 10 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 301674, 2836827); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 169359, 2731894); // D (I, cp)
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 460, 236, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 145075, 2719752); // D (I, cp)
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 464, 236, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 60083, 2731894); // D (I, cp)
+// Device view-level: 1.8
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 147 MB. Current time: 2/6/19, 2:41:13 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 200879, 2796664); // D (I, cp)
+// Device view-level: 2.9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 213349, 2819399); // D (I, cp)
+// Device select: 'Net - LED2_TRI'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 3303, 43649, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 147 MB. Current time: 2/6/19, 2:41:17 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 219 MB. Current time: 2/6/19, 2:41:22 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 147 MB. Current time: 2/6/19, 2:41:23 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 206696, 2800925); // D (I, cp)
+// Device select: 'Net - LED2_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 3200, 43363, 1217, 514); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 206631, 2799956); // D (I, cp)
+// Device select: 'Net - LED2_TRI'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 3199, 43348, 1217, 514); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 146 MB. Current time: 2/6/19, 2:41:58 PM EST
+// Elapsed time: 35 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 237765, 2837743); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3666183, 3909644); // D (I, cp)
+// Device view-level: 1.3
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3848543, 4097449); // D (I, cp)
+// Device view-level: 2.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3892721, 4131669); // D (I, cp)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 35799, 2319074); // D (I, cp)
+// Device view-level: 1.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 148 MB. Current time: 2/6/19, 2:42:07 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 196634, 2469274); // D (I, cp)
+// Device view-level: 2.1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 204007, 2483996); // D (I, cp)
+// Device view-level: 3.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 206791, 2492359); // D (I, cp)
+// Device view-level: 4.3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 149 MB. Current time: 2/6/19, 2:42:14 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 210262, 2495207); // D (I, cp)
+// Device view-level: 0.0
+// Elapsed time: 10 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 400052, 3326840); // D (I, cp)
+// Device view-level: 1.7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 485000, 3529693); // D (I, cp)
+// Device view-level: 2.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 493514, 3552307); // D (I, cp)
+// Device view-level: 3.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 149 MB. Current time: 2/6/19, 2:42:33 PM EST
+// Elapsed time: 207 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 500820, 3556855); // D (I, cp)
+// Device select: 'Net - LED2_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 29169, 207160, 1217, 514); // U (k, cp)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED2]", 21, false); // ba (Q, cp)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED]", 20, false); // ba (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 205 MB. Current time: 2/6/19, 2:46:02 PM EST
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED2]", 21, false); // ba (Q, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 497180, 3559345); // D (I, cp)
+// Device view-level: 0.0
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED]", 20, false); // ba (Q, cp)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED2]", 21, false); // ba (Q, cp)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED2_OBUF]", 22, false); // ba (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 149 MB. Current time: 2/6/19, 2:46:07 PM EST
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED2_OBUF]", 22, false); // ba (Q, cp)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Tri, Nets (44), LED2_OBUFT_inst_i_3_n_0]", 23, false); // ba (Q, cp)
+// Elapsed time: 610 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buffers.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 4); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buffers.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buffers.xdc", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// g (cp): Close Design: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 127 MB. Current time: 2/6/19, 2:56:36 PM EST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,926 MB. GUI used memory: 128 MB. Current time: 2/6/19, 2:56:36 PM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bt (cp): Synthesis is Out-of-date: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a (bt)
+// bx (cp):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // bt (cp)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 96 MB. Current time: 2/6/19, 2:56:45 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1594 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc] Finished Parsing XDC File [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// 'dQ' command handler elapsed time: 18 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1431 ms.
+// Device view-level: 0.0
+dismissDialog("Open Synthesized Design"); // bx (cp)
+// Device view-level: 0.0
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: Tri 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 126 MB. Current time: 2/6/19, 2:56:59 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1484 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Tri' [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new/Tri.v:25] INFO: [Synth 8-6155] done synthesizing module 'Tri' (1#1) [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/sources_1/new/Tri.v:25] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc] Finished Parsing XDC File [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Tcl Message: 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3582.504 ; gain = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Tri.v", 2); // k (j, cp)
+selectCodeEditor("Tri.v", 252, 380); // cl (w, cp)
+typeControlKey((HResource) null, "Tri.v", 'c'); // cl (w, cp)
+// Elapsed time: 792 seconds
+selectCodeEditor("Tri.v", 525, 147); // cl (w, cp)
+closeMainWindow("MyOwnTristate - [D:/GitHub/ENES-246/BufferVoltageControll/MyOwnTristate/MyOwnTristate.xpr] - Vivado 2018.3"); // cp
+// A (cp): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cp)
