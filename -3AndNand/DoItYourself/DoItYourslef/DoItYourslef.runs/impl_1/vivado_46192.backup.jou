@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb  8 13:47:40 2019
+# Process ID: 46192
+# Current directory: D:/GitHub/ENES-246/-3AndNand/DoItYourself/DoItYourslef/DoItYourslef.runs/impl_1
+# Command line: vivado.exe -log NandXor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NandXor.tcl -notrace
+# Log file: D:/GitHub/ENES-246/-3AndNand/DoItYourself/DoItYourslef/DoItYourslef.runs/impl_1/NandXor.vdi
+# Journal file: D:/GitHub/ENES-246/-3AndNand/DoItYourself/DoItYourslef/DoItYourslef.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source NandXor.tcl -notrace

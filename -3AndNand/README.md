@@ -87,9 +87,29 @@ In this project an "And" gate is created four different ways. Test it. Show your
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
+
+module vcb(
+   input  sw0,
+   input  sw1,
+   output [3:0] LED
+   );
+   wire nand1;
+   and a1(LED[0],sw0,sw1);
+   bufif1 b1(LED[1], sw0, sw1);
+   nand n1(nand1,sw0,sw1);
+   nand n2(LED[2],nand1,nand1);
+   assign LED[3] = sw0 && sw1;
+
+endmodule
+
 #### RTL Schematic Screen shot
 
+![1549646657394](1549646657394.png)
+
 #### Synthesis Schematic Screen shot
+
+![1549646862008](1549646862008.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
@@ -97,17 +117,59 @@ In this project an "And" gate is created four different ways. Test it. Show your
 
 *Which of the four ways is the most attractive way to code?*
 
+​	 Using assign, as it shows the logical operators in a way I am comfortable, and translates from programming languages better.
+
 *At what level of verilog code abstraction is the **assign** command?*
+
+​	Its a part of Data flow, which is translated into the logic that is then implemented using LUT chips
 
 *Does order of the verilog commands (sequence of commands) change anything?*
 
+​	independent commands are not affected by order, dependent commands(like instantiating and using a variable) are affected by order, and may cause errors.
+
 *What are a1,b1,n1,n2 associated with the gate names called in Verilog?*
 
-*In the language C, the names between () look like variables passing data to some kind of function, object or subroutine. What do the represent in verilog?* 
+ These labels describe the gates created by their code in the RTL schematic, this helps determine which code creates what part of the RTL schematic.
+
+*In the language C, the names between () look like variables passing data to some kind of function, object or subroutine. What do they represent in verilog?* 
+
+​	These variables are parameters for the function being used. The first being the output, and the second two being inputs. The pattern and use of these parameters can change depending on the function. 
 
 *At what step (RTL, Synthesis, Implementation, BitFile) did Vivado figure out that most of the LED's were doing the same thing?* 
 
+At the implementation phase, the schematic changed to just one LUT from multiple, showing how vivado combined the logic at this step
+
 *Implement each and gate one at a time. List any differences between them at the RTL or Synthesis states here. Take screen shots if you want or describe them verbally.* 
+
+assign-
+
+![1549649212176](1549649212176.png)
+
+![1549649298475](1549649298475.png)
+
+And command- 
+
+No change in RTL design
+
+No change in synthesis design
+
+​	Tristate and gate-
+
+RTL design has new component-
+
+![1549649490171](1549649490171.png)
+
+Synthesis has slightly different output buffers- one more two input buffer directly connected to output compared to other synth designs, and a one input LUT instead of two
+
+![1549649579883](1549649579883.png)
+
+Nand implimentation
+
+RTL design - new gate path, very repetitive and ineffiecent![1549649761840](1549649761840.png)
+
+Synth design - Slightly different ordering, but overall parts are exact match
+
+
 
 
 
@@ -121,15 +183,37 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 
 #### Verilog Code
 
+module NandXor(
+    input A,
+    input B,
+    input C,
+    output X,
+    output Y
+    );
+    assign X = A^B^C;
+    assign Y = !(!(A&B)&C);
+
+endmodule
+
 #### RTL Schematic Screen shot
+
+![1549650475467](1549650475467.png)
 
 #### Synthesis Schematic Screen shot
 
+![1549651706598](1549651706598.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+4 inputs, top. 2 outputs, bottom.
+
+![1549651801361](1549651801361.png)
 
 #### Testing
 
 *XOR gates have evolved with [two different implementations](https://en.wikipedia.org/wiki/XOR_gate#More_than_two_inputs) with three or more inputs.  Which does the verilog assign command implement?*
+
+​	This uses the odd number implementation, where so long as there is an odd number of inputs high, the output will be high. This is done with cascading two input xor gates.
 
 ## Ethics
 
