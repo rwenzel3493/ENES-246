@@ -33,7 +33,7 @@ Throw switches, output should be high when any switch is off
 
 One might expect that Vivado would reduce these to a single circuit and reuse the circuit. There have been software packages that do this.  The logisim software can do this. Download logisim and the circuit above, and with this circuit open in logisim, go to project, analyze the circuit, minimize, set as expression for output x, set as expression for output y, ok, yes sure. *What happens?*
 
-both circuits are simplified, yet they are not combined
+both circuits are simplified to fewest gates, yet they are not combined.
 
 
 
@@ -93,9 +93,13 @@ Verilog did get rid of useless variables, but still did not combine  the two out
 
 You are student at a university. *Why would professors demand in the first course on digital circuit design that you learn  [Karnaugh Maps,](https://en.wikipedia.org/wiki/Karnaugh_map)  [Quine McCluskey Algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm), and  [Petrick Cover](https://en.wikipedia.org/wiki/Petrick%27s_method), which seems unrelated to the labs, doesn't predict Vivado behavior and is at best buried in the Vivado software?*
 
+These classes explain the fundamentals of solving problems in a way students can understand easier. Newer methods such as  FPGA built on these ideas and created a different path to get the same results. This can be an "easier" reference to understand Vivado's internal processes.
+
 ​	
 
 Suppose you are engineer designing the Vivado software. You get the question from a customer, a fellow engineer using your companies product and paying your salary: "Why doesn't Vivado see one circuit?" Read this [forum post](https://forums.xilinx.com/t5/Synthesis/Question-about-LUT-usage-in-a-very-very-simple-combinatorial/td-p/221143).  *What is your answer to this question?*   
+
+The software is designed to create the fastest solution to the problem as fast as possible. Because the software doesn't need to combine the circuits due to space, and a combined circuit wouldn't be faster, Vivado chooses not to combine it.
 
 ​	
 

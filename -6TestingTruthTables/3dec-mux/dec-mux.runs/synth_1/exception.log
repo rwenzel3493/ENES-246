@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\GitHub\ENES-246\-6TestingTruthTables\3dec-mux\dec-mux.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

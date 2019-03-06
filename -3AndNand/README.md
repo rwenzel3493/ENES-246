@@ -13,6 +13,8 @@ Project_1 is playing with voltage controlled buffers just like the previous lab,
 
 #### Port Diagram
 
+![1551903541010](1551903541010.png)
+
 #### Verilog Code
 
 `timescale 1ns / 1ps
@@ -84,6 +86,8 @@ in the xdc file.
 In this project an "And" gate is created four different ways. Test it. Show your instructor all four ways working. 
 
 #### Port Diagram
+
+![1551903740763](1551903740763.png)
 
 #### Verilog Code
 
@@ -181,6 +185,8 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 
 #### Port Diagram
 
+![1551903931037](1551903931037.png)
+
 #### Verilog Code
 
 module NandXor(
@@ -223,7 +229,11 @@ The ethics questions below are more important than your answers. The goal in ans
 
 EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Summarize this wikipedia article  on the death of [EDIF](https://en.wikipedia.org/wiki/EDIF) standards in less than 200 words:*
 
+
+
+
+
 This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
 
-
+simple, as vivado will simplify the circuit anyways, and the simple circuit is more readable. A more complex circuit may be better when it allows for better troubleshooting, or more clear intention in each of the parts. This will allow other people to more easily work with the project.
 

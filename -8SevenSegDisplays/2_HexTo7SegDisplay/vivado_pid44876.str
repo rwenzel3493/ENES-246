@@ -1,0 +1,1490 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 44876
+License: Customer
+
+Current time: 	Fri Mar 01 12:07:59 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 8 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Ross Wenzel
+User home directory: C:/Users/Ross Wenzel
+User working directory: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2018.3
+RDI_DATADIR: D:/Vivado/2018.3/data
+RDI_BINDIR: D:/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Ross Wenzel/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Ross Wenzel/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Ross Wenzel/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/vivado.log
+Vivado journal file location: 	D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/vivado.jou
+Engine tmp dir: 	D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/.Xil/Vivado-44876-DESKTOP-IRNLGB8
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2018.3
+XILINX_SDK: D:/SDK/2018.3
+XILINX_VIVADO: D:/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 619 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\GitHub\ENES-246\-8SevenSegDisplays\2_HexTo7SegDisplay\hexTo7seg.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.xpr 
+// Tcl Message: open_project D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_3_hexTo7seg' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+93887kb) [00:00:09]
+// [Engine Memory]: 636 MB (+514996kb) [00:00:09]
+// [GUI Memory]: 103 MB (+7216kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2835 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 52 MB. Current time: 3/1/19, 12:08:03 PM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 701.227 ; gain = 82.859 
+// Project name: hexTo7seg; location: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay; part: xc7a100tcsg324-1
+// [Engine Memory]: 676 MB (+8900kb) [00:00:12]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// PAPropertyPanels.initPanels (hexTo7seg.v) elapsed time: 0.2s
+// [Engine Memory]: 728 MB (+19456kb) [00:00:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v)]", 1, true); // B (D, cp) - Node
+// Elapsed time: 12 seconds
+selectCodeEditor("hexTo7seg.v", 194, 132); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 763, 331); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 345, 340); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 13, 64); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 304, 176); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 136, 79); // cl (w, cp)
+// [GUI Memory]: 112 MB (+3744kb) [00:00:45]
+// Elapsed time: 18 seconds
+selectCodeEditor("hexTo7seg.v", 225, 64); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 222, 44); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 222, 65); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 224, 47); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 225, 77); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 226, 63); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 226, 61); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 230, 71); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 232, 61); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 228, 75); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 226, 104); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 226, 114); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 227, 133); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 228, 152); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Mar  1 12:09:03 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 45 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Mar  1 12:09:50 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 765 MB (+335kb) [00:02:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 765 MB. GUI used memory: 54 MB. Current time: 3/1/19, 12:10:36 PM EST
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 44 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar  1 12:11:28 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+// Elapsed time: 46 seconds
+selectCodeEditor("hexTo7seg.v", 721, 218); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 227, 84); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 412, 185); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 510, 227); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("hexTo7seg.v", 604, 352); // cl (w, cp)
+// ah (cp): Bitstream Generation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// [GUI Memory]: 118 MB (+343kb) [00:04:30]
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4076 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4023DA 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,659 MB. GUI used memory: 59 MB. Current time: 3/1/19, 12:12:32 PM EST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/hexTo7seg.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,681 MB (+920175kb) [00:04:41]
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/hexTo7seg.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("hexTo7seg.v", 301, 333); // cl (w, cp)
+// Elapsed time: 128 seconds
+selectCodeEditor("hexTo7seg.v", 58, 204); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 62, 203); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 216, 198); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 304, 175); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// al (cp): Save Project: addNotify
+dismissDialog("Run Synthesis"); // A (cp)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  1 12:15:38 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+maximizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // ax (aI, cp)
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g (aR, cp): TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'hexto7segment' not found [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:18]. ]", 4, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 6, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'hexTo7seg' [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:2]. ]", 5, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'hexto7segment' not found [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:18]. ]", 4, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'hexTo7seg' [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:2]. ]", 5, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-439] module 'hexto7segment' not found [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:18]. ]", 4, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'hexTo7seg' [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:2]. ]", 5, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 6, false); // ah (Q, cp)
+unMaximizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // ax (aI, cp)
+// Elapsed time: 83 seconds
+selectCodeEditor("hexTo7seg.v", 301, 242); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("hexTo7seg.v", 330, 224, false, true, false, false, false); // cl (w, cp) - Control Key
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("hexTo7seg.v", 331, 237); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 316, 263); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 73, 261); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 177, 295, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("hexTo7seg.v", 126, 278); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 316, 277); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 67, 275, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // X (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceOtoP.PACodeEditor_FIND_IN_FILES, "Find in Files..."); // af (al, Popup.HeavyWeightWindow)
+// Find in Files: addNotify
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// bx (cp):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,713 MB. GUI used memory: 63 MB. Current time: 3/1/19, 12:18:11 PM EST
+// 'f' command handler elapsed time: 8 seconds
+dismissDialog("Find in Files"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,713 MB. GUI used memory: 62 MB. Current time: 3/1/19, 12:18:11 PM EST
+selectCodeEditor("hexTo7seg.v", 295, 297); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 299, 283); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("hexTo7seg.v", 290, 257); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCDto7segment (BCDto7SegmentDisplay.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCDto7segment (BCDto7SegmentDisplay.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 193, 190); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+// Elapsed time: 120 seconds
+selectCodeEditor("hexToBCD.v", 110, 76); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 250, 260); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 280, 133); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 433, 164); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectCodeEditor("hexToBCD.v", 293, 188); // cl (w, cp)
+selectCodeEditor("hexToBCD.v", 298, 212); // cl (w, cp)
+selectCodeEditor("hexToBCD.v", 303, 191); // cl (w, cp)
+// Elapsed time: 48 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 364, 240); // cl (w, cp)
+// Elapsed time: 108 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 407, 245); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 497, 246); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 504, 245); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 542, 243); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 528, 245); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 536, 238); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 548, 238); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 295, 248); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 240, 264); // cl (w, cp)
+// Elapsed time: 74 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 163, 214); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 89, 117); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 67, 331); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 302, 302); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 221, 311); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 217, 310, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hexTo7seg.v", 304, 301); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 246, 368); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("hexTo7seg.v", 284, 362); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 556, 221); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 177, 242); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 179, 268); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 182, 288); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 176, 304); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 183, 325); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 136, 348); // cl (w, cp)
+// Elapsed time: 189 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 150, 344); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 252, 353); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 159, 350); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 353, 350); // cl (w, cp)
+// Elapsed time: 79 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 397, 351); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 382, 351); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 621, 351); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 701, 352); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 149, 346); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 640, 347); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 395, 347); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 532, 349); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 250, 352); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 667, 343); // cl (w, cp)
+// Elapsed time: 381 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 142, 328); // cl (w, cp)
+// Elapsed time: 74 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 205, 324); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 279, 326); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 266, 330); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 257, 328); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 241, 329); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 269, 328); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 250, 324); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 422, 327); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 369, 324, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 368, 324); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 423, 329); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 317, 331); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 367, 327); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 316, 331); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 455, 324); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 313, 326); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 483, 323); // cl (w, cp)
+// [GUI Memory]: 124 MB (+352kb) [00:38:29]
+// Elapsed time: 45 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f (cp): Launch Runs: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  1 12:47:01 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log [Fri Mar  1 12:47:01 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,717 MB. GUI used memory: 64 MB. Current time: 3/1/19, 12:48:12 PM EST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 119 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 134, 328); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'c'); // cl (w, cp)
+// Elapsed time: 148 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 664, 350); // cl (w, cp)
+// Elapsed time: 82 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 200, 133); // cl (w, cp)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 249, 169); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 248, 169); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 183, 226); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 198, 199); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 87, 201); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 117, 203); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 149, 204); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 136, 224); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 208, 222); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'c'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 199, 219); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 38, 245); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 43, 258); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 54, 284); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 109, 239); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 106, 271); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 115, 290); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 46, 285); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 170, 243); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 158, 246); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 187, 329); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 207, 330); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 286, 327, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 283, 329); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 354, 331); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 381, 329); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 440, 327); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 509, 331); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 547, 332); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 621, 323); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 593, 331); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 488, 328); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 423, 323); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 323, 327); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 319, 329); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 252, 325); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 181, 326); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 659, 328); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 188, 326); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 286, 330); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 341, 329); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 375, 328); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 456, 328); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 492, 331); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 536, 328); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 575, 327); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 665, 322); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 699, 322); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 758, 326); // cl (w, cp)
+// Elapsed time: 61 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 183, 302); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 211, 312); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 284, 309, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 320, 311); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 401, 306); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 480, 309); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 505, 306); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 573, 308); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 610, 308); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 631, 311); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 448, 304); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 370, 305); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 249, 303); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 177, 311); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 186, 282); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 184, 287); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 202, 287); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 289, 277); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 352, 288); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 428, 289); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 489, 286); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 521, 287); // cl (w, cp)
+// Elapsed time: 52 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 185, 265); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 178, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 252, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 298, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 346, 261); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 369, 263); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 394, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 419, 266); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 464, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 494, 266); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 535, 266); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 577, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 606, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 658, 263); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 697, 268, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("BCDto7SegmentDisplay.v", 701, 268); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 738, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 763, 264); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 478, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 720, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 765, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 260, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 181, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 314, 262); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 326, 267); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 429, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 421, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 430, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 558, 267); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 675, 263); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 808, 266); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 563, 260); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 442, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 313, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 303, 267); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 449, 263); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 469, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 597, 267); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 612, 266); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 726, 267); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 745, 264); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 899, 267); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 884, 266); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 731, 268); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 592, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 450, 265); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 302, 260); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 180, 261); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 308, 262); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 901, 264); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 417, 258); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 431, 265); // cl (w, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 191, 243); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 200, 240); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 177, 246); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 379, 244); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 416, 240); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 430, 241); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 480, 243); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 512, 243); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 551, 241); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 592, 240); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 625, 248); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 658, 243); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 699, 241); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 748, 236); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 772, 243); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 801, 246); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 640, 222); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 192, 228); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 196, 224); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 273, 221); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 350, 224); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 409, 222); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 387, 223); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 456, 228); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 451, 227); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 181, 224); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 260, 222); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 348, 219); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 183, 216); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 327, 336); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 429, 334); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 422, 301); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 420, 282); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 505, 223); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 807, 244); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 178, 222); // cl (w, cp)
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 210, 226); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 288, 223); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 375, 225); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 321, 222); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 467, 225); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 535, 225); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 560, 228); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 509, 218); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 440, 224); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 365, 223); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 262, 222); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 189, 223); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 198, 189); // cl (w, cp)
+typeControlKey((HResource) null, "BCDto7SegmentDisplay.v", 'v'); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 211, 201); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 280, 207); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 349, 202); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 381, 202); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 451, 204); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 527, 205); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 553, 203); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 512, 199); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 495, 199); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 506, 199); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 433, 194); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 321, 204); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 250, 198); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 183, 197); // cl (w, cp)
+// Elapsed time: 117 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 622, 281); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 315, 278); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 334, 265); // cl (w, cp)
+// Elapsed time: 94 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// al (cp): Save Project: addNotify
+dismissDialog("Run Synthesis"); // A (cp)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  1 13:11:10 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 43, 171); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 1080, 345); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 1080, 345, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BCDto7SegmentDisplay.v", 26, 12); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 29, 12, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BCDto7SegmentDisplay.v", 1061, 372); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("BCDto7SegmentDisplay.v", 898, 384); // cl (w, cp)
+// ah (cp): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Mar  1 13:11:48 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectCodeEditor("hexToBCD.v", 378, 369); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3, true, false); // k (j, cp) - Popup Trigger
+// TclEventType: RUN_STEP_COMPLETED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 514, 339); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 771, 381); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 377, 162); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 32 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar  1 13:13:05 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 463, 308); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 443, 230); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 3); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 32 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/hexTo7seg.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: hexTo7seg 
+// WARNING: HEventQueue.dispatchEvent() is taking  1241 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2050 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,057 MB. GUI used memory: 63 MB. Current time: 3/1/19, 1:14:29 PM EST
+// [Engine Memory]: 2,059 MB (+307960kb) [01:06:43]
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,059 MB. GUI used memory: 63 MB. Current time: 3/1/19, 1:14:38 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1943 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.152 ; gain = 72.238 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'hexTo7seg' [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:2] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'HEXto7segment' [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/imports/Lab2_3_hexTo7seg/BCDto7SegmentDisplay.v:6] INFO: [Synth 8-6155] done synthesizing module 'HEXto7segment' (1#1) [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/imports/Lab2_3_hexTo7seg/BCDto7SegmentDisplay.v:6] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'hexTo7seg' (2#1) [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/sources_1/new/hexTo7seg.v:2] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1872.250 ; gain = 111.336 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1872.250 ; gain = 111.336 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1872.250 ; gain = 111.336 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 9 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc] Finished Parsing XDC File [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2207.090 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2242.992 ; gain = 482.078 
+// Tcl Message: 9 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2242.992 ; gain = 482.078 
+// 'dQ' command handler elapsed time: 23 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// [GUI Memory]: 138 MB (+7984kb) [01:06:50]
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 2); // k (j, cp)
+// [GUI Memory]: 152 MB (+7171kb) [01:07:11]
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 2); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 333, 366); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("hexTo7seg.v", 240, 594); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 4); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 317, 339); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 315, 345); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 176, 353); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 180, 352, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BCDto7SegmentDisplay.v", 234, 354); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 249, 390); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 275, 437); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 281, 469); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 281, 469, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BCDto7SegmentDisplay.v", 287, 393); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 282, 361); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 273, 344); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 207, 343); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 231, 379); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 236, 396); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 247, 411); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 248, 429); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 244, 446); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 240, 459); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 240, 472); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 241, 430); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 456, 204); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 3); // k (j, cp)
+selectCodeEditor("hexToBCD.v", 360, 176); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// g (cp): Close Design: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,124 MB. GUI used memory: 87 MB. Current time: 3/1/19, 1:16:31 PM EST
+// Engine heap size: 2,124 MB. GUI used memory: 87 MB. Current time: 3/1/19, 1:16:31 PM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bt (cp): Synthesis is Out-of-date: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1298 ms.
+// Tcl Message: close_design 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Close Design"); // g (cp)
+selectButton(PAResourceQtoS.StaleRunDialog_RUN_SYNTHESIS, "Run Synthesis"); // a (bt)
+// bt (cp): Synthesis is Out-of-date: addNotify
+// A (bt): Reset Run: addNotify
+dismissDialog("Synthesis is Out-of-date"); // bt (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (bt):  Starting Design Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset Run"); // A (bt)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Mar  1 13:16:35 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log 
+// 'dQ' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // bx (bt)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// HOptionPane Error: 'The file 'D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/ impl_1/hexTo7seg.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (C, J)
+// TclEventType: RUN_FAILED
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bC (cp)
+// ah (cp): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 0); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 0); // k (j, cp)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hexToBCD : xil_defaultlib.hexToBCD]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex2bcd (hexToBCD.v)]", 4, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 81, 265); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  1 13:18:11 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), hex2BCD : xil_defaultlib.hex2BCD]", 3, false); // B (D, cp)
+// TclEventType: RUN_FAILED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hexTo7seg (hexTo7seg.v), i2 : HEXto7segment (BCDto7SegmentDisplay.v)]", 2, false); // B (D, cp)
+// ah (cp): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectCodeEditor("hexToBCD.v", 196, 166); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 1); // k (j, cp)
+selectCodeEditor("hexTo7seg.v", 92, 91); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 93, 91); // cl (w, cp)
+selectCodeEditor("hexTo7seg.v", 96, 91, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("hexTo7seg.v", 96, 94); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  1 13:18:43 2019] Launched synth_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 2); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Mar  1 13:19:15 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 18, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (cp):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,131 MB. GUI used memory: 70 MB. Current time: 3/1/19, 1:19:19 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,162 MB (+210kb) [01:11:29]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1424 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc] Finished Parsing XDC File [D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2249.262 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// 'dQ' command handler elapsed time: 3 seconds
+// Device view-level: 0.0
+// Device view-level: 0.0
+dismissDialog("Open Synthesized Design"); // bx (cp)
+// [GUI Memory]: 162 MB (+2534kb) [01:11:31]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [Engine Memory]: 2,271 MB (+1359kb) [01:11:34]
+// RouteApi::initDelayMediator elapsed time: 11.6s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,639 MB. GUI used memory: 103 MB. Current time: 3/1/19, 1:19:37 PM EST
+// [Engine Memory]: 2,645 MB (+273107kb) [01:11:55]
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 4); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 171, 202); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 786, 201); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 786, 201, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BCDto7SegmentDisplay.v", 44, 199); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 33, 199); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 896, 205); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 896, 205, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BCDto7SegmentDisplay.v", 38, 202); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 186, 222); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 159, 224); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 232, 192); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 232, 205); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 233, 209); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 233, 220); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 236, 232); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 241, 247); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 243, 264); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 243, 276); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 243, 256); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 243, 247); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 247, 235); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 247, 226); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 249, 199); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 11 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a (al)
+// f (cp): Launch Runs: addNotify
+dismissDialog("Save Project"); // al (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar  1 13:20:33 2019] Launched impl_1... Run output will be captured here: D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/runme.log 
+selectCodeEditor("BCDto7SegmentDisplay.v", 252, 271); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 251, 298); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 4); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 622, 195); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 574, 202); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 38 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/GitHub/ENES-246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/impl_1/hexTo7seg.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Set Up Debug]", 21, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_DEBUG_WIZARD
+// WARNING: HEventQueue.dispatchEvent() is taking  1893 ms.
+// N (cp): Set Up Debug: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,709 MB. GUI used memory: 109 MB. Current time: 3/1/19, 1:22:17 PM EST
+selectButton("CANCEL", "Cancel"); // JButton (j, N)
+dismissDialog("Set Up Debug"); // N (cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 257, 226); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 124, 262); // cl (w, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 203, 24); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 399, 79); // dr (af, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 216, 283); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,778 MB. GUI used memory: 108 MB. Current time: 3/1/19, 1:22:37 PM EST
+selectCodeEditor("BCDto7SegmentDisplay.v", 224, 115); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 235, 164); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 235, 164, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "A", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "X[3]", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton((HResource) null, "ComboBox.arrowButton"); // SynthArrowButton (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 319, 215); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 204, 129); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 206, 129, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("BCDto7SegmentDisplay.v", 140, 130); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 221, 163); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 161, 180, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectCheckBox((HResource) null, "Match case", true); // JCheckBox (cp, FindAndReplaceDialog): TRUE
+// [Engine Memory]: 2,778 MB (+1043kb) [01:15:38]
+selectCheckBox((HResource) null, "Match whole word", true); // JCheckBox (cp, FindAndReplaceDialog): TRUE
+selectCheckBox((HResource) null, "Match whole word", false); // JCheckBox (cp, FindAndReplaceDialog): FALSE
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectCodeEditor("BCDto7SegmentDisplay.v", 361, 140); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexToBCD.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexTo7seg.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,778 MB. GUI used memory: 108 MB. Current time: 3/1/19, 1:23:47 PM EST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCDto7SegmentDisplay.v", 4); // k (j, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 374, 109, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "B", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "x[2]", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectCodeEditor("BCDto7SegmentDisplay.v", 253, 129, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "C", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "x[1]", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectCodeEditor("BCDto7SegmentDisplay.v", 275, 151); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 275, 151, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "d", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "x[0]", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+typeControlKey(null, null, 'z');
+selectCodeEditor("BCDto7SegmentDisplay.v", 258, 121, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "D", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectCodeEditor("BCDto7SegmentDisplay.v", 315, 156); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 315, 156, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // af (al, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "X[3]", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "x[3]", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectCodeEditor("BCDto7SegmentDisplay.v", 468, 360); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BCDto7SegmentDisplay.v", 153, 139); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 129, 174); // cl (w, cp)
+selectCodeEditor("BCDto7SegmentDisplay.v", 273, 340); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// al (cp): Save Project: addNotify
+dismissDialog("Run Synthesis"); // A (cp)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
