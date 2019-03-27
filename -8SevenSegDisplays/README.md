@@ -189,8 +189,6 @@ Switches 0 through 2 control the decimal place.
 
 *Which* *counter would you delete if another program was controlling the number to be displayed? Cut and paste a picture of the code that would be deleted in order to do this.*
 
-![1550263932331](../../ENES247/lab3-ReusableBCDhex7segDisplayCode/1550263932331.png)
-
 
 
 *What 32 bit variable name that you would add as an input to this module, and connect it to a top level with something to display? (Hint right now it is seeded with a constant.)* c_input
@@ -215,9 +213,13 @@ There are three groups of Engineers with different objectives:
 
 *Describe one area where these three different institutions conflict.* 
 
+Commercial Engineers and Vivado's engineers want everything to be efficient and fast when using Vivado, but educational want a more fundamental approach that has more access and visibility of what the software is doing. Commercial and educational engineers also want to teach and use relevant code, but Vivado wants to constantly update and change the code in order to make people buy the new software, keeping the commercial and educational fields one step behind.
+
 *Describe where the FPGA companies like Xilinx and the open source world conflict.*
 
 *In what way are engineers removed from their employer's competing goals and more free to work together in standards committees?*
+
+
 
 *What does an engineer represent ... like a lawyer representing clients, doctors representing patients?*
 

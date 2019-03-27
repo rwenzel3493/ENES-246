@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 18 16:03:16 2019
+# Process ID: 19296
+# Current directory: D:/GitHub/ENES-246/10Latches/1_SR_Latch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23700 D:\GitHub\ENES-246\10Latches\1_SR_Latch\SR_Latch.xpr
+# Log file: D:/GitHub/ENES-246/10Latches/1_SR_Latch/vivado.log
+# Journal file: D:/GitHub/ENES-246/10Latches/1_SR_Latch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/ENES-246/10Latches/1_SR_Latch/SR_Latch.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
